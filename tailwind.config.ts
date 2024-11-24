@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+const plugin = require('tailwindcss/plugin')
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,5 +14,9 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant('m-app', ':merge(.group\\/marketplace)[data-mcompanion] &')
+    }),
+  ],
 } satisfies Config;
