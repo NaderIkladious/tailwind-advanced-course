@@ -4,7 +4,7 @@ export const Header = () => {
 	return (
 		<div className="w-full h-16 bg-blue-900 flex items-center justify-between px-4">
 			<h1 className="text-2xl">Mini Marketplace</h1>
-			<Button variant='test'>Login</Button>
+			<Button>Login</Button>
 		</div>
 	)
 }

@@ -3,7 +3,7 @@ import Catalog from "@/app/images/catalog.webp";
 
 export const Navigation = () => {
 	return (
-		<ul className="grid grid-cols-2 mt-10 mx-4 gap-4">
+		<ul className="grid grid-cols-2 mx-4 gap-4">
 			<li>
 				<a href="#" className="flex rounded border-neutral-400 border bg-white/50 overflow-hidden">
 					<div className="w-full p-4 flex flex-col">
