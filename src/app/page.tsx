@@ -1,3 +1,4 @@
+'use client'
 import {Header} from "@/app/components/header";
 import {Navigation} from "@/app/components/navigation";
 import {RecentlyBoughtCarousel} from "@/app/components/recently-bought-carousel";
