@@ -12,7 +12,10 @@ type Props = {
 export const Product = ({product}: Props) => {
 	return (
 		<div className="border flex flex-col items-stretch rounded-md overflow-hidden border-neutral-200 w-[300px] cursor-pointer">
-			<div className="h-[200px] overflow-hidden">
+			<div className="h-[200px] overflow-hidden relative">
+				{product.sponsored && (
+					<span className="bg-amber-300/40 italic text-sm px-2 py-1.5 text-white absolute z-10">Sponsored</span>
+				)}
 				<img src={product.image} className="h-[200px] hover:scale-125 transition"/>
 			</div>
 			<div className="px-4 my-5">
