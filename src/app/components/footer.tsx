@@ -1,6 +1,6 @@
 export const Footer = () => {
 	return (
-		<div className="group-data-[traffic=app]/marketplace:hidden h-20 bg-blue-400 w-full flex items-center justify-between px-4 mt-10">
+		<div className="app:hidden h-20 bg-blue-400 w-full flex items-center justify-between px-4 mt-10">
 			<ul className="flex gap-2 items-center">
 				<li><a href="#">Impresum</a></li>
 				<li><a href="#">Support</a></li>

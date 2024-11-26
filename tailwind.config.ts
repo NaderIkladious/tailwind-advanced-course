@@ -16,7 +16,7 @@ export default {
   },
   plugins: [
     plugin(function ({ addVariant }) {
-      addVariant('m-app', ':merge(.group\\/marketplace)[data-mcompanion] &')
+      addVariant('app', '.group\\/marketplace[data-traffic=app] &')
     }),
   ],
 } satisfies Config;
