@@ -12,6 +12,7 @@ export const recentlyBought = [
 		image: Pan.src,
 		description: "Sturdy and lightweight pans for baking.",
 		price: "€8.99",
+		sponsored: true,
 		attributes: ["9x13 inches", "Pack of 10", "Heat Resistant: 450°F"],
 	},
 	{
@@ -26,6 +27,7 @@ export const recentlyBought = [
 		image: Forks.src,
 		description: "Durable disposable cutlery.",
 		price: "€6.99",
+		sponsored: true,
 		attributes: ["100 pieces", "Recyclable plastic", "BPA-free"],
 	},
 	{
@@ -47,6 +49,7 @@ export const recentlyBought = [
 		image: Baking.src,
 		description: "Perfect for cupcakes and muffins.",
 		price: "€5.99",
+		sponsored: true,
 		attributes: ["Standard size", "Pack of 200", "Non-stick coating"],
 	},
 	{
