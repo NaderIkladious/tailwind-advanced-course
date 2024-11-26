@@ -12,6 +12,7 @@ export const Button = ({
 }: PropsWithChildren<Props>) => {
 	return (
 		<button
+			data-slot='button'
 			data-variant={variant}
 			data-color={color}
 			className={cls(
