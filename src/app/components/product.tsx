@@ -24,7 +24,7 @@ export const Product = ({product}: Props) => {
 				</ul>
 				<p className="text-zinc-900 text-sm/6 mt-4">{product.description}</p>
 				<div className="flex justify-between items-center mt-4">
-					<p className="text-blue-500 text-2xl">{product.price}</p>
+					<p data-slot='price' className="text-blue-500 text-2xl">{product.price}</p>
 					<Button variant="rounded">Add To Cart</Button>
 				</div>
 			</div>
