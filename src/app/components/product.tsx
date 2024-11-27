@@ -14,11 +14,11 @@ export const Product = ({product}: Props) => {
 		<div className="group/tile border flex flex-col items-stretch rounded-md overflow-hidden border-neutral-200 w-[300px] cursor-pointer">
 			<div className="h-[200px] overflow-hidden relative">
 				{product.sponsored && (
-					<span className="bg-amber-300/40 italic text-sm px-2 py-1.5 text-white absolute z-10">Sponsored</span>
+					<span data-slot='sponsor' className="bg-amber-300/40 italic text-sm px-2 py-1.5 text-white absolute z-10">Sponsored</span>
 				)}
 				<img src={product.image} className="h-[200px] group-hover/tile:scale-125 transition"/>
 			</div>
-			<div className="px-4 my-5">
+			<div className="px-4 py-5 app:group-has-[[data-slot=sponsor]]/tile:bg-amber-300/15">
 				<p className="text-zinc-900 text-lg group-hover/tile:text-blue-600">{product.title}</p>
 				<ul className="flex gap-2 flex-wrap mt-4">
 					{product.attributes.map(item => (
